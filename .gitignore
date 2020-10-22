@@ -5,7 +5,9 @@ __pycache__/
 
 # C extensions
 *.so
-
+*.exe
+*.pem
+*.docx
 # Distribution / packaging
 .Python
 build/
@@ -127,3 +129,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+assignment3/main.exe
