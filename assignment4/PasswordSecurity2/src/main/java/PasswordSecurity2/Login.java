@@ -5,11 +5,11 @@
 //         potrebnych upravach.                                         //
 // Uloha3: Vlozte do prihlasovania nejaku formu oneskorenia.            //
 //////////////////////////////////////////////////////////////////////////
-package passwordsecurity2;
+package PasswordSecurity2;
 
 import java.io.IOException;
 import java.util.StringTokenizer;
-import passwordsecurity2.Database.MyResult;
+import PasswordSecurity2.Database.MyResult;
 import java.util.concurrent.TimeUnit;
 
 public class Login {
@@ -17,7 +17,7 @@ public class Login {
         
         TimeUnit.MILLISECONDS.sleep(500);
 
-        MyResult account = Database.find("hesla.txt", meno);
+        MyResult account = Database.find(meno);
         if (!account.getFirst()){
             return new MyResult(false, "Nespravne meno.");
         }

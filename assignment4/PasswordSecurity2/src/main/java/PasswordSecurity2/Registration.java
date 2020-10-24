@@ -4,19 +4,14 @@
 // Uloha2: Pouzit vytvorenu funkciu na hashovanie a ulozit heslo        //
 //         v zahashovanom tvare.                                        //
 //////////////////////////////////////////////////////////////////////////
-package passwordsecurity2;
-
-import java.math.BigInteger;
-import java.security.MessageDigest;
+package PasswordSecurity2;
 import java.security.NoSuchAlgorithmException;
-import java.security.SecureRandom;
-
-import passwordsecurity2.Database.MyResult;
+import PasswordSecurity2.Database.MyResult;
 
 
 public class Registration {
     protected static MyResult registracia(String meno, String heslo) throws NoSuchAlgorithmException, Exception{
-        if (Database.exist("hesla.txt", meno)){
+        if (Database.find(meno).getFirst()){
             System.out.println("Meno je uz zabrate.");
             return new MyResult(false, "Meno je uz zabrate.");
         }
@@ -29,7 +24,7 @@ public class Registration {
             byte[] salt = Security.getSalt();
             String password = Security.hash(heslo,salt);
 
-            Database.add("hesla.txt", meno + ":"+ password + ":" + Security.toHex(salt));
+            Database.add(meno,password,Security.toHex(salt));
         }
         return new MyResult(true, "");
     }

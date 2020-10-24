@@ -5,7 +5,7 @@
 // Je vhodne vytvorit aj dalsie pomocne funkcie napr. na porovnavanie   //
 // hesla ulozeneho v databaze so zadanym heslom.                        //
 //////////////////////////////////////////////////////////////////////////
-package passwordsecurity2;
+package PasswordSecurity2;
 
 import java.math.BigInteger;
 import java.security.MessageDigest;

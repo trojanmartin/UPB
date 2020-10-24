@@ -1,10 +1,10 @@
-package passwordsecurity2;
+package PasswordSecurity2;
 
 import java.util.Arrays;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
-import passwordsecurity2.Database.MyResult;
+import PasswordSecurity2.Database.MyResult;
 
 
 public class GUI_Registration extends javax.swing.JFrame {

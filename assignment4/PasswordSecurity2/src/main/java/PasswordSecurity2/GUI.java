@@ -1,4 +1,4 @@
-package passwordsecurity2;
+package PasswordSecurity2;
 
 import java.awt.Dimension;
 import java.io.IOException;
@@ -8,7 +8,7 @@ import javax.swing.JEditorPane;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
-import passwordsecurity2.Database.MyResult;
+import PasswordSecurity2.Database.MyResult;
 
 
 public class GUI extends javax.swing.JFrame {

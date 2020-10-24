@@ -1,4 +1,4 @@
-package passwordsecurity2;
+package PasswordSecurity2;
 
 import javax.swing.JFrame;
 
